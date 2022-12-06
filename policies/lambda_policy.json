@@ -1,0 +1,11 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "PutBucketFromLambda",
+            "Effect": "Allow",
+            "Action": "s3:PutBucketPolicy",
+            "Resource": "arn:aws:s3:::${DOMAIN_BUCKET}"
+        }
+    ]
+}
